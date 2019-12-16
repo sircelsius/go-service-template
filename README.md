@@ -15,9 +15,15 @@ An HTTP API that uses `gorilla/mux`. It comes with the following built-ins:
   
 ### Logs
 
-Automatically registers a `uber/zap` logger and exposes it via `logging.GetLogger(ctx). Your logs will contain the fields described above.
+Automatically registers a `uber/zap` logger and exposes it via `logging.GetLogger(ctx)`. Your logs will contain the fields described above.
 
 ### Tracing
 
 Automatically creates an opentracing `Tracer`.
+
+### Metrics
+
+HTTP endpoints are automatically timed and reported on.
+
+Additional metrics can be added via the Prometheus client.
 

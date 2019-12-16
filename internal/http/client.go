@@ -11,21 +11,21 @@ import (
 	"github.com/sony/gobreaker"
 )
 
-type client struct {
+type Client struct {
 	client *http.Client
 	name string
 	cb     *gobreaker.CircuitBreaker
 }
 
-func NewClient(name string) *client {
-	return &client{
+func NewClient(name string) *Client {
+	return &Client{
 		client: &http.Client{
 			Transport: &http.Transport{
 				IdleConnTimeout:       time.Minute,
-				TLSHandshakeTimeout:   100 * time.Millisecond,
-				ResponseHeaderTimeout: 100 * time.Millisecond,
+				TLSHandshakeTimeout:   1000 * time.Millisecond,
+				ResponseHeaderTimeout: 1000 * time.Millisecond,
 			},
-			Timeout: 500 * time.Millisecond,
+			Timeout: 5 * time.Second,
 		},
 		cb: gobreaker.NewCircuitBreaker(gobreaker.Settings{
 			Name:          name,
@@ -38,7 +38,7 @@ func NewClient(name string) *client {
 	}
 }
 
-func (c *client) Do(ctx context.Context, r *http.Request) (*http.Response, error) {
+func (c *Client) Do(ctx context.Context, r *http.Request) (*http.Response, error) {
 	r, err := injectTracingHeaders(ctx, r)
 	if err != nil {
 		return nil, err
