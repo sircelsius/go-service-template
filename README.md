@@ -4,6 +4,8 @@
 
 An example Go service.
 
+:construction_worker_woman: this is a personal experiment and is not meant to be used as an exmaple of how to create production services in Go.
+
 ## Features
 
 ### HTTP API
