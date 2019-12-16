@@ -1,4 +1,5 @@
 # go-service-template
+[![Go Report Card](https://goreportcard.com/badge/github.com/sircelsius/go-service-template)](https://goreportcard.com/report/github.com/sircelsius/go-service-template)
 
 An example Go service.
 
