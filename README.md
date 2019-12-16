@@ -1,4 +1,6 @@
-# go-service-template [![Go Report Card](https://goreportcard.com/badge/github.com/sircelsius/go-service-template)](https://goreportcard.com/report/github.com/sircelsius/go-service-template)
+# go-service-template 
+
+[![Build Status](https://travis-ci.com/sircelsius/go-service-template.svg?branch=master)](https://travis-ci.com/sircelsius/go-service-template) [![Go Report Card](https://goreportcard.com/badge/github.com/sircelsius/go-service-template)](https://goreportcard.com/report/github.com/sircelsius/go-service-template)
 
 An example Go service.
 
