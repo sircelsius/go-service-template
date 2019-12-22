@@ -1,11 +1,14 @@
 build:
 	go build -o /dev/null cmd/app/app.go
 
+test:
+	go test ./internal... ./cmd...
+
 lint:
-	golint internal/... cmd/...
+	go run golang.org/x/lint/goling internal... cmd...
 
 vet:
-	go vet internal/... cmd/...
+	go vet internal... cmd...
 
 cyclo:
 	gocyclo internal/*

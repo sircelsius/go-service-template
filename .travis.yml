@@ -3,6 +3,7 @@ go:
   - "1.13"
 script:
   - make
+  - make test
   - make lint
   - make vet
   - make cyclo
