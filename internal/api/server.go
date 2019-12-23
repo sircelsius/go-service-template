@@ -5,7 +5,7 @@ import (
 )
 
 // server is the struct that contains our HTTP server
-type server struct{
+type server struct {
 	router *mux.Router
 }
 

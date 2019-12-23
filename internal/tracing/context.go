@@ -10,8 +10,8 @@ import (
 )
 
 const (
-	traceLoggerKey = "trace_id_s"
-	spanLoggerKey = "span_id_s"
+	traceLoggerKey  = "trace_id_s"
+	spanLoggerKey   = "span_id_s"
 	parentLoggerKey = "parent_id_s"
 )
 
@@ -37,4 +37,3 @@ func ContextWithSpanLogger(ctx context.Context, span opentracing.Span) context.C
 	}
 	return ctx
 }
-

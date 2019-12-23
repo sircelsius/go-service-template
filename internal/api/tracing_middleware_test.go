@@ -13,7 +13,7 @@ import (
 
 func TestTracingMiddleware_WithoutOpentracingHeaders(t *testing.T) {
 	c, _ := config.FromEnv()
-	closer, _ := c.InitGlobalTracer("test",)
+	closer, _ := c.InitGlobalTracer("test")
 	defer closer.Close()
 
 	s := server{router: mux.NewRouter()}
@@ -35,7 +35,7 @@ func TestTracingMiddleware_WithoutOpentracingHeaders(t *testing.T) {
 
 func TestTracingMiddleware_WithOpentracingHeaders(t *testing.T) {
 	c, _ := config.FromEnv()
-	closer, _ := c.InitGlobalTracer("test",)
+	closer, _ := c.InitGlobalTracer("test")
 	defer closer.Close()
 
 	s := server{router: mux.NewRouter()}

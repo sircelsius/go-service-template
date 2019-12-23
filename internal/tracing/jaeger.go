@@ -15,7 +15,7 @@ func NewTracer(ctx context.Context, serviceName string, development bool) io.Clo
 	var cfg config.Configuration
 	if development {
 		cfg = config.Configuration{
-			ServiceName:         serviceName,
+			ServiceName: serviceName,
 			Sampler: &config.SamplerConfig{
 				Type:  jaeger.SamplerTypeConst,
 				Param: 1,

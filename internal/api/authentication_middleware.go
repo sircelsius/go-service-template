@@ -46,4 +46,3 @@ func (s *server) authenticationMiddleware(jwkUri string) func(next http.Handler)
 		})
 	}
 }
-

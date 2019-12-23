@@ -13,7 +13,7 @@ import (
 
 type Client struct {
 	client *http.Client
-	name string
+	name   string
 	cb     *gobreaker.CircuitBreaker
 }
 
