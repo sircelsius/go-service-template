@@ -3,7 +3,6 @@ module github.com/sircelsius/go-service-template
 go 1.13
 
 require (
-	github.com/codahale/hdrhistogram v0.0.0-20161010025455-3a0bb77429bd // indirect
 	github.com/cyberdelia/go-metrics-graphite v0.0.0-20161219230853-39f87cc3b432 // indirect
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/fzipp/gocyclo v0.0.0-20150627053110-6acd4345c835 // indirect
@@ -13,8 +12,8 @@ require (
 	github.com/lestrrat/go-pdebug v0.0.0-20180220043741-569c97477ae8 // indirect
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/pkg/errors v0.9.1
-	github.com/prometheus/client_golang v1.3.0
-	github.com/prometheus/common v0.9.1
+	github.com/prometheus/client_golang v1.7.1
+	github.com/prometheus/common v0.12.0
 	github.com/rcrowley/go-metrics v0.0.0-20190826022208-cac0b30c2563 // indirect
 	github.com/sony/gobreaker v0.4.1
 	github.com/stretchr/testify v1.4.0
