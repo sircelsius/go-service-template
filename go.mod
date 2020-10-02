@@ -19,7 +19,7 @@ require (
 	github.com/sony/gobreaker v0.4.1
 	github.com/stretchr/testify v1.4.0
 	github.com/uber/jaeger-client-go v2.22.1+incompatible
-	github.com/uber/jaeger-lib v2.2.0+incompatible
+	github.com/uber/jaeger-lib v2.4.0+incompatible
 	go.uber.org/atomic v1.5.1 // indirect
 	go.uber.org/zap v1.13.0
 )
