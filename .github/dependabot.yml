@@ -1,0 +1,28 @@
+version: 2
+updates:
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: github.com/prometheus/common
+    versions:
+    - 0.15.0
+    - 0.16.0
+    - 0.17.0
+    - 0.18.0
+    - 0.19.0
+    - 0.20.0
+    - 0.21.0
+  - dependency-name: github.com/uber/jaeger-client-go
+    versions:
+    - 2.25.0+incompatible
+    - 2.26.0+incompatible
+  - dependency-name: github.com/prometheus/client_golang
+    versions:
+    - 1.9.0
+  - dependency-name: github.com/uber/jaeger-lib
+    versions:
+    - 2.4.0+incompatible
